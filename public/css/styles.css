@@ -68,7 +68,6 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 5%;
-    border: 2px solid red;
 }
 
 .main__card > .main__icon-delivery {
@@ -81,7 +80,7 @@ body {
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    right: 20px;
+    right: 35px;
     bottom: 80px;
     color: #39b54a;
 }
@@ -99,18 +98,46 @@ body {
     border-bottom: solid 2px #ebebeb;
 }
 
-.card__precios, .card__descuento {
-    display: inline;
+.card__cifras {
+    display: flex;
 }
 
+.card__precios {
+    width: 30%;
+    align-self: flex-start;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
 
+.card__descuento {
+    width: 70%;
+    align-self: flex-end;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #39b54a;
+}
 
 .card__descripcion {
     font-size: 1rem;
-    color: #666666;
+    color: #b1b1b1d2;
     margin-top: 20px;
     align-self: flex-start;
+    font-weight: 800;
 }
 
 
 
+
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 768px) {
+    .main__ultimaVisita, .main__ofertas {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+    .main__card {
+        width: 50%;
+    }
+}
