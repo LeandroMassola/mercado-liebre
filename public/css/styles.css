@@ -1,0 +1,116 @@
+/*
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.header {
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.header__logo {
+    width: 200px;
+}
+
+.header__text {
+    text-align: center;
+    font-weight: 400;
+}
+
+.header__hamburguer-menu {
+    background-color: #03264C;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    margin: auto;
+}
+
+.header__navbar {
+    display: none;
+}
+
+.header__navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+
+
+
+.main__ultimaVisita, .main__ofertas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    border: 2px solid red;
+}
+
+.main__card > .main__icon-delivery {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 80px;
+    color: #39b54a;
+}
+
+.main__card {
+    position: relative;
+    box-shadow: #ebebeb 0px 0px 2px 5px;
+    margin-top: 50px;
+    padding: 5%;
+}
+
+.card__img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: solid 2px #ebebeb;
+}
+
+.card__precios, .card__descuento {
+    display: inline;
+}
+
+
+
+.card__descripcion {
+    font-size: 1rem;
+    color: #666666;
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+
+
