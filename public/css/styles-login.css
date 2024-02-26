@@ -1,0 +1,15 @@
+.login {
+    margin-top: 10%;
+}
+
+.login__cont {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__input-user-name::after {
+    content: "Debes ingresar un nombre";
+    color: red;
+}

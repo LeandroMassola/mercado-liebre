@@ -1,0 +1,45 @@
+.main__form {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    width: 100%;
+    background-color: #ebebeb ;
+}
+
+.form {
+    
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 90%;
+    padding: 5%;
+    gap: 5%;
+}
+
+.form label {
+    width: 90%;
+    margin-bottom: 5%;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form label input {
+    margin-top: 5%;
+    padding: 4%;
+}
+
+.form label .input__cont-profile {
+    margin-top: 5%;
+    display: flex;
+}
+
+.input__data-fill {
+    width: 100%;
+    border-radius: 8px;
+    border-style: none;
+}
+
+
+

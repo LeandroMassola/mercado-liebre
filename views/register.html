@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro de usuario</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles-register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4941d4966e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__topbar">
+            <div class="header__cont-logo">
+                <img class="header__logo" src="images/logo-mercado-liebre.svg" alt="logo-mercadoliebre">                
+            </div>
+            
+            <div class="header__cont-texto">
+                <h2 class="header__text">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    Comprá en cuotas y sin tarjeta de crédito
+                </h2>
+            </div>
+    
+            
+            
+        </div>
+
+        
+
+        <nav class="header__navbar">
+            <ul class="header__left-navbar">
+                <li><a href="#">Oficiales</a></li>
+                <li><a href="#">Tiendas</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+
+            <ul class="header__right-navbar">
+                <li><a href="/register.html">Creá tu cuenta</a></li><i class="fa-regular fa-address-card header__icono--signup" style="color: black;"></i>
+
+                <li><a href="#">Ingresá</a></li><i class="fa-solid fa-arrow-right-to-bracket header__icono--login" style="color: black;"></i>
+                <li><a href="#">Mis compras</a></li><i class="fa-solid fa-basket-shopping header__icono--compras" style="color: black;"></i>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Formulario-->
+
+    <main class="main__form">
+        <form class="form" action="#" method="POST">
+            <label class="label__name-lastname">
+                <input class="input__name-lastname input__data-fill" type="text" placeholder="Escribe tu nombre y apellido" >
+            </label><br>
+            <label class="label__user-name">
+                <input class="input__user-name input__data-fill" type="text" placeholder="nombre de usuario">
+            </label><br>
+            <label class="label__email">
+                <input class="input__email input__data-fill" type="email" placeholder="ejemplo@mail.com" >
+            </label><br>
+            <label class="label__birth-date">
+                Fecha de nacimiento: <input type="date" class="input__date input__data-fill">
+            </label><br>
+            <label class="label__adress">
+                <input type="text" class="input__adress input__data-fill" placeholder="Ingresa tu domicilio" >
+            </label><br>
+            <label class="label__profile">
+                Perfil de usuario: <br>
+                <div class="input__cont-profile">
+                    <input class="input__profile" name="perfilUsuario" type="radio"> Vender
+                    <input class="input__profile" name="perfilUsuario" type="radio"> Comprar
+                </div>
+            </label><br>
+            <label class="label__interests">
+                Categorías de interés
+                <input class="input__interests" type="checkbox" name="interes">Electro
+                <input class="input__interests" type="checkbox" name="interes">Moda
+                <input class="input__interests" type="checkbox" name="interes">Hogar
+                <input class="input__interests" type="checkbox" name="interes">Juguetería
+                <input class="input__interests" type="checkbox" name="interes">Vida sana
+            </label><br>
+            <label class="label__img-profile">
+                Sube tu foto de Perfil
+                <input type="file"  class="input__img-profile" accept="jpg" >
+            </label><br>
+            <label class="label__password">
+                <input type="password" class="input__password input__data-fill" placeholder="Contraseña">
+            </label><br>
+            <label class="label__confirm-pass">
+                <input type="password" class="input__confirm-pass input__data-fill" placeholder="Confirmar Contraseña">
+            </label><br>
+            <button type="submit" class="btn__send"><a href="/">Enviar</a></button>
+            <button type="reset" class="btn__clear">Limpiar</button>
+        </form>
+    </main>
+    
+    
+
+ <!--    <main class="main">
+        <img class="main__banner" src="/images/img-home-banner.jpg" alt="home-banner">
+        <div class="main__contTitular"><h3 class="main__titular">Basado en tu útlima visita</h3></div>
+
+        <section class="main__ultimaVisita">
+            <article class="main__card">
+                <img class="card__img" src="images/img-cafetera-moulinex.jpg" alt="">
+                <i class="fa-solid fa-truck main__icon-delivery"></i>
+                <div class="card__cifras">
+                    <p class="card__precios">$6.670</p>
+                    <p class="card__descuento">40% off</p>
+                </div>
+                <p class="card__descripcion">Cafetera Moulinex</p>
+                
+            </article>
+            <article class="main__card">
+                <img class="card__img" src="images/img-macbook-pro-2019.jpg" alt="macbook 2019">
+                <i class="fa-solid fa-truck main__icon-delivery"></i>
+                <div class="card__cifras">
+                    <p class="card__precios">$6.670</p>
+                    <p class="card__descuento">40% off</p>
+                </div>
+                <p class="card__descripcion">MacBook Pro 2019</p>
+            </article>
+
+            <article class="main__card">
+                <img class="card__img" src="images/img-samsung-galaxy-s10.jpg" alt="samsung s10">
+                <i class="fa-solid fa-truck main__icon-delivery"></i>
+                <div class="card__cifras">
+                    <p class="card__precios">$6.670</p>
+                    <p class="card__descuento">40% off</p>
+                </div>
+                <p class="card__descripcion">Samsung Galaxy S10</p>
+            </article>
+
+            <article class="main__card">
+                <img class="card__img" src="images/img-tv-samsung-smart.jpg" alt="tv smart samsung">
+                <i class="fa-solid fa-truck main__icon-delivery"></i>
+                <div class="card__cifras">
+                    <p class="card__precios">$6.670</p>
+                    <p class="card__descuento">40% off</p>
+                </div> 
+                <p class="card__descripcion">Samsung Galaxy S10</p>
+               
+            </article>
+            
+            
+            
+        </section>
+        <div class="main__contTitular">
+            <h3 class="main__titular">Ofertas</h3>
+        </div>
+        <section class="main__ofertas">       
+
+            <article class="main__card">
+                <img class="card__img" src="images/img-cafetera-moulinex.jpg" alt="">
+                <i class="fa-solid fa-truck main__icon-delivery"></i>
+                <div class="card__cifras">
+                    <p class="card__precios">$6.670</p>
+                    <p class="card__descuento">40% off</p>
+                </div>
+                <p class="card__descripcion">Samsung Galaxy S10</p>
+
+            </article>
+
+            <article class="main__card">
+                <img class="card__img" src="images/img-macbook-pro-2019.jpg" alt="macbook 2019">
+                <i class="fa-solid fa-truck main__icon-delivery"></i>
+                <div class="card__cifras">
+                    <p class="card__precios">$6.670</p>
+                    <p class="card__descuento">40% off</p>
+                </div>
+                <p class="card__descripcion">MacBook Pro 2019</p>
+            </article>
+
+            <article class="main__card">
+                <img class="card__img" src="images/img-samsung-galaxy-s10.jpg" alt="samsung s10">
+                <i class="fa-solid fa-truck main__icon-delivery"></i>
+                <div class="card__cifras">
+                    <p class="card__precios">$6.670</p>
+                    <p class="card__descuento">40% off</p>
+                </div>
+                <p class="card__descripcion">Samsung Galaxy S10</p>
+            </article>
+
+            <article class="main__card">
+                <img class="card__img" src="images/img-tv-samsung-smart.jpg" alt="tv smart samsung">
+                <i class="fa-solid fa-truck main__icon-delivery"></i>
+                <div class="card__cifras">
+                    <p class="card__precios">$6.670</p>
+                    <p class="card__descuento">40% off</p>
+                </div>
+                <p class="card__descripcion">Smart Tv Samsung 43" </p>
+            </article>
+        
+        </section>
+</main> -->
+
+</body>
+</html>
+
+
+
+
