@@ -20,8 +20,8 @@
 .form label {
     width: 90%;
     margin-bottom: 5%;
-    color: black;
-    font-size: 1.2rem;
+    
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
@@ -31,14 +31,66 @@
 }
 
 .form label .input__cont-profile {
-    margin-top: 5%;
+    margin-top: 10%;
     display: flex;
+    gap: 5%;
+    margin-left: 5%;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.form label .input__profile {
+    margin: 0% 5% 0 5%;
+
 }
 
 .input__data-fill {
     width: 100%;
     border-radius: 8px;
     border-style: none;
+}
+
+
+.input__cont-interests {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.form label .input__interests {
+    margin-bottom: 10%;
+}
+
+.input__img-profile {
+    width: 100%;
+}
+
+.btn__container {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+.btn__send, .btn__clear {
+    border: none;
+    background-color: #03264C;
+    text-decoration: none;
+    color: white;
+    padding: 5%;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 33.3%;
+}
+
+.btn__submit:visited, .btn__submit:link {
+    text-decoration: none;
+    
+    color: white;
 }
 
 

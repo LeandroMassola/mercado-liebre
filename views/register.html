@@ -80,16 +80,21 @@
                 </div>
             </label><br>
             <label class="label__interests">
-                Categorías de interés
-                <input class="input__interests" type="checkbox" name="interes">Electro
-                <input class="input__interests" type="checkbox" name="interes">Moda
-                <input class="input__interests" type="checkbox" name="interes">Hogar
-                <input class="input__interests" type="checkbox" name="interes">Juguetería
-                <input class="input__interests" type="checkbox" name="interes">Vida sana
+                Intereses:
+                <div class="input__cont-interests">
+                    Electro<input class="input__interests" type="checkbox" name="interes">
+                    Moda<input class="input__interests" type="checkbox" name="interes">
+                    Hogar<input class="input__interests" type="checkbox" name="interes">
+                    Juguetería<input class="input__interests" type="checkbox" name="interes">
+                    Vida sana<input class="input__interests" type="checkbox" name="interes">
+                </div>
+                
             </label><br>
+            
             <label class="label__img-profile">
                 Sube tu foto de Perfil
                 <input type="file"  class="input__img-profile" accept="jpg" >
+                
             </label><br>
             <label class="label__password">
                 <input type="password" class="input__password input__data-fill" placeholder="Contraseña">
@@ -97,8 +102,11 @@
             <label class="label__confirm-pass">
                 <input type="password" class="input__confirm-pass input__data-fill" placeholder="Confirmar Contraseña">
             </label><br>
-            <button type="submit" class="btn__send"><a href="/">Enviar</a></button>
-            <button type="reset" class="btn__clear">Limpiar</button>
+            <div class="btn__container">
+                <button type="submit" class="btn__send"><a class="btn__submit" href="/">Enviar</a></button>
+                <button type="reset" class="btn__clear">Limpiar</button>
+            </div>
+            
         </form>
     </main>
     
