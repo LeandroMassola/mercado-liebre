@@ -9,8 +9,8 @@ Verde: #39b54a
 
 * {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -19,27 +19,83 @@ body {
 
 .header {
     background-color: #EAC926;
-    padding: 20px;
+    padding: 5%;
+}
+
+.header__topbar {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.header__cont-logo {
+    width: 100%;
+    display: flex;
+    gap: 5%;
 }
 
 .header__logo {
-    width: 200px;
+    width: 50%;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-bottom: 3%;
+}
+
+.header__cont-busqueda {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+}
+
+.header__botonBusqueda {
+    display: flex;
+    background-color: white;
+    border: none;
+    color: #666666be;
+    /* height: 100%; */
+    padding: 5%;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 5px;
+    align-items: center;
+    width: 100%;
+}
+
+.header__input {
+    border: none;
+    /* height: max-content; */
+    padding: 2%;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.header__cont-texto {
+    margin-bottom: 2%;
 }
 
 .header__text {
     text-align: center;
     font-weight: 400;
+    font-size: 0.8rem;
 }
 
 .header__hamburguer-menu {
-    background-color: #03264C;
-    color: white;
+    background-color: #1259c3;
     display: block;
-    max-width: 50px;
-    padding: 15px 0;
     border-radius: 8px;
     text-align: center;
     margin: auto;
+    max-width: 13%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.header__burguer-icon  {
+    width: 100%;
+    color: white;
+    font-size: 1.4rem;
 }
 
 .header__navbar {
@@ -60,15 +116,33 @@ body {
     font-size: 17px;
 }
 
+.main {
+    background-color: #ebebeb;
+    
+}
 
+.main__banner {
+    width: 100%;
+}
 
+.main__contTitular {
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    left: 4.2%;
+}
+
+.main__titular {
+    color: #666666;
+    font-size: 1.3rem;
+}
 
 .main__ultimaVisita, .main__ofertas {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     padding: 5%;
-    border: 2px solid red;
 }
 
 .main__card > .main__icon-delivery {
@@ -81,16 +155,17 @@ body {
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    right: 20px;
-    bottom: 80px;
+    right: 35px;
+    bottom: 85px;
     color: #39b54a;
 }
 
 .main__card {
     position: relative;
-    box-shadow: #ebebeb 0px 0px 2px 5px;
+    box-shadow: #666 0px 0px 10px 2px;
     margin-top: 50px;
     padding: 5%;
+    background-color: white;
 }
 
 .card__img {
@@ -99,18 +174,285 @@ body {
     border-bottom: solid 2px #ebebeb;
 }
 
-.card__precios, .card__descuento {
-    display: inline;
+.card__cifras {
+    display: flex;
 }
 
+.card__precios {
+    width: 30%;
+    align-self: flex-start;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
 
+.card__descuento {
+    width: 70%;
+    align-self: flex-end;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #39b54a;
+}
 
 .card__descripcion {
+    display: block;
     font-size: 1rem;
-    color: #666666;
+    color: #b1b1b1d2;
     margin-top: 20px;
     align-self: flex-start;
+    font-weight: 800;
+}
+
+.footer__container {
+    display: flex;
+    padding: 5%;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__boxes {
+    text-align: center;
+    padding: 10%;
+}
+
+.footer__boxes h3 {
+    font-size: 1.2rem;
+    color: #666666;
+}
+
+.footer__iconos {
+    color: #1259c3;
+    font-size: 2.8rem;
+    margin-bottom: 8%;
+}
+
+.footer__textos {
+    color: #666666;
+    font-size: 0.9rem;
+}
+
+.footer__copyright {
+    color: #666666;
+    font-size: 0.7rem;
+    padding: 2%;
+}
+
+.footer__copyright h3 {font-weight: 400;}
+
+
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 768px) {
+
+    .header {
+        padding: 2% 2% 1% 2%;
+    }
+
+    .header__hamburguer-menu {
+        display: none;
+    }
+
+    .header__topbar {
+        margin-bottom: 2%;
+        display: flex;
+        gap: 5%;
+        justify-content: space-between;
+    }
+    
+    .header__cont-logo {
+        align-items: center;
+    }
+
+    .header__cont-busqueda {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header__botonBusqueda {
+        
+        width: 100%;
+        padding: 0%;
+         
+    }
+
+    .header__input {
+        width: 90%;
+    }
+
+    .header__cont-texto {
+        display: flex;
+        align-items:center;
+        margin-bottom: 0;
+    }
+
+    .header__navbar {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .header__right-navbar {
+        justify-content: flex-end;
+    }
+
+    .header__right-navbar i {
+        align-self: center;
+        margin-left: -3%;
+    }
+
+    .header__right-navbar, .header__left-navbar {
+        width: 50%;
+        display: flex;
+        gap: 5%;
+    }
+
+    .header__right-navbar li a, .header__left-navbar li a {
+        font-size: 0.8rem;
+    }
+   
+    .main__ultimaVisita, .main__ofertas {
+        flex-flow: row wrap;
+        justify-content: space-around;
+        
+    }
+
+    .main__card {
+        width: 40%;
+        padding: 1%;
+    }
+
+    .main__contTitular {
+        left: 8.4%;
+    }
+    
 }
 
 
+@media (min-width: 1024px) {
+.header__topbar {
+    gap: 2%;
+}
 
+    .header__cont-logo {
+        gap: 0;
+        width: 66.6%;
+    }
+
+    .header__logo {
+        height: 10vh;
+        width: 30%;
+    }
+
+    .header__input {
+        height: 8vh;
+    }
+
+    .header__cont-busqueda {
+        width: 70%;
+        margin-left: 3%;
+    }
+
+    .header__botonBusqueda i {
+        margin-left: 5%;
+    }
+
+    .header__cont-texto {
+        width: 33.3%;
+        justify-content: flex-end;
+    }
+
+    .main {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        padding: 5%;
+        margin-top: -2%;
+    }
+
+
+    .main__ultimaVisita, .main__ofertas {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .main__ofertas {
+        margin-bottom: 10%;
+    }
+    .main__contTitular {
+        display: flex;
+        position: static;
+        margin-bottom: 2.5%;
+        margin-left: -5%;
+    }
+
+    .main__contTitular--ofertas {
+        margin-top: 5%;
+    }
+
+    .main__titular {
+        margin-left: 4.5%;
+    }
+
+    .main__card {
+        width: 25%;
+        padding: 1%;
+        margin-top: 0;
+        margin-right: 5%;
+    }
+
+    .card__cont-descripcion {
+        background-color: white;
+        height: 15px;
+        margin-top: 10%;
+    }
+
+    .card__descripcion {
+        color: transparent
+    }
+
+    .main__card > .main__icon-delivery {
+        transition: color 2s;
+        left: 13vw;
+        bottom: 14vh;
+    }
+
+    .main__card:hover {
+        .card__descripcion {
+            color: #666666;
+            transition: 2.2s;
+        }
+
+        .main__icon-delivery {
+          transform: rotate(-90deg);  
+          transition: 0.8s;
+        }
+    }
+
+    .card__cifras {
+        gap: 15% ;
+    }
+
+    .footer__container {
+        flex-flow: row nowrap;
+    }
+
+    .footer__boxes {
+        transition: all 0.8s;
+        width: 33%;
+    }
+
+    .footer__iconos {
+        transition: all 0.8s;
+    }
+
+    .footer__boxes:hover {
+        .footer__iconos {
+            color: #092e6662;
+            font-size: 2rem;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+body {
+    background-color: #ebebeb;
+}
+
+
+.login {
+    margin-top: 10%;
+}
+
+.login__cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    margin-bottom: 15%;
+    justify-content: center;
+}
+
+.login__input-user-name, .login__input-pass {
+   margin-bottom: 5%;
+    width: 75%;
+   align-self: center;
+}
+
+.input__user-name, .input__pass {
+    width: 100%;
+    border: none;
+    padding: 2%;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #ebebeb;
+}
+
+.btn__submit {
+    width: 75%;
+    color: white;
+}
+
+
+.login__btn-submit {
+    width: 100%;
+    background-color: #1259c3 ;
+    color: white;
+    font-size: 0.9rem;
+    padding: 3%;
+    padding-top: 2%;
+    border: none;
+    border-radius: 5px;
+    height: 5vh;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* .login__input-user-name::after {
+    content: "Debes ingresar un nombre";
+    color: red;
+} */
+
+
+/*MEDIA QUERIES*/
+
+
+
+@media (min-width: 1024px) {
+    .login__btn-submit {
+        transition: all 0.7s;
+    }
+
+    .login__btn-submit:hover {
+        background-color: #0022AA;
+    }
+
+    .input__user-name, .input__pass {
+        transition: box-shadow 0.7s;
+        outline: none;
+    }
+    
+    .input__user-name:hover, .input__pass:hover {
+        box-shadow: rgb(255, 255, 255) 1px 1px 15px;
+    }
+
+    .input__user-name:focus, .input__pass:focus {
+        outline: solid #1259c3 2px;
+    }
+}
