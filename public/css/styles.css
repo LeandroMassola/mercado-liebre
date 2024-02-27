@@ -64,8 +64,8 @@ body {
 .header__input {
     border: none;
     /* height: max-content; */
-    padding: 5%;
-    font-size: 0.8rem;
+    padding: 2%;
+    font-size: 1rem;
     font-weight: 500;
     border-radius: 5px;
     width: 100%;
@@ -332,8 +332,38 @@ body {
 
 
 @media (min-width: 1024px) {
-    
-   
+.header__topbar {
+    gap: 2%;
+}
+
+    .header__cont-logo {
+        gap: 0;
+        width: 66.6%;
+    }
+
+    .header__logo {
+        height: 10vh;
+        width: 30%;
+    }
+
+    .header__input {
+        height: 8vh;
+    }
+
+    .header__cont-busqueda {
+        width: 70%;
+        margin-left: 3%;
+    }
+
+    .header__botonBusqueda i {
+        margin-left: 5%;
+    }
+
+    .header__cont-texto {
+        width: 33.3%;
+        justify-content: flex-end;
+    }
+
     .main {
         display: flex;
         flex-flow: column;

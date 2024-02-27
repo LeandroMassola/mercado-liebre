@@ -61,7 +61,7 @@
                 <input class="input__name-lastname input__data-fill" type="text" placeholder="Escribe tu nombre y apellido" >
             </label><br>
             <label class="label__user-name">
-                <input class="input__user-name input__data-fill" type="text" placeholder="nombre de usuario">
+                <input class="input__user-name input__data-fill" type="text" placeholder="Nombre de usuario">
             </label><br>
             <label class="label__email">
                 <input class="input__email input__data-fill" type="email" placeholder="ejemplo@mail.com" >
@@ -70,26 +70,54 @@
                 Fecha de nacimiento: <input type="date" class="input__date input__data-fill">
             </label><br>
             <label class="label__adress">
-                <input type="text" class="input__adress input__data-fill" placeholder="Ingresa tu domicilio" >
-            </label><br>
-            <label class="label__profile">
-                Perfil de usuario: <br>
-                <div class="input__cont-profile">
-                    <input class="input__profile" name="perfilUsuario" type="radio"> Vender
-                    <input class="input__profile" name="perfilUsuario" type="radio"> Comprar
-                </div>
-            </label><br>
-            <label class="label__interests">
-                Intereses:
-                <div class="input__cont-interests">
-                    Electro<input class="input__interests" type="checkbox" name="interes">
-                    Moda<input class="input__interests" type="checkbox" name="interes">
-                    Hogar<input class="input__interests" type="checkbox" name="interes">
-                    Juguetería<input class="input__interests" type="checkbox" name="interes">
-                    Vida sana<input class="input__interests" type="checkbox" name="interes">
-                </div>
+                <input type="text" class="input__adress input__data-fill" placeholder="Ingresá tu domicilio" >
+            </label>
+            
+            <p class="user-profile-title">Perfil de usuario:</p>
+            
+            <div class="input__cont-profile">
                 
-            </label><br>
+                <label class="label__profile">
+                    Comprador
+                    <input class="input__profile" name="buy-sell" type="radio">
+                </label>
+                
+                <label class="label__profile">
+                    Vendedor
+                    <input class="input__profile" name="buy-sell"  type="radio">
+                </label>
+            </div>
+            
+            
+            <br>
+            <p class="title-interests">Interéses:</p>
+            
+            <div class="input__cont-interests">
+                <label class="label__interests">
+                    Electro
+                    <input class="input__interests" type="checkbox" name="interes">
+                </label>
+                <label class="label__interests">
+                    Moda
+                    <input class="input__interests" type="checkbox" name="interes">
+                </label>
+                <label class="label__interests">
+                    Hogar
+                    <input class="input__interests" type="checkbox" name="interes">
+                </label>
+                <label class="label__interests">
+                    Juguetería
+                    <input class="input__interests" type="checkbox" name="interes">
+                </label>
+                <label class="label__interests">
+                    Vida sana
+                    <input class="input__interests" type="checkbox" name="interes">
+                </label>
+            </div>
+            <label class="label__interests"></label>
+            
+                
+            <br>
             
             <label class="label__img-profile">
                 Sube tu foto de Perfil
@@ -109,6 +137,33 @@
             
         </form>
     </main>
+
+    <footer class="footer">
+        <section class="footer__container">
+            <div class="footer__formaPagos footer__boxes">
+                <i class="footer__iconos fa-solid fa-credit-card"></i>
+                <h3>Pagá con tarjeta o en efectivo</h3>
+                <p class="footer__textos">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                puntos de pago. ¡Y siempre es seguro! </p>
+            </div>
+            <div class="footer__envios footer__boxes">
+                <i class="footer__iconos fa-solid fa-gift"></i>
+                <h3>Envío gratis desde los $2500</h3>
+                <p class="footer__textos">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                productos. Es un beneficio de Mercado Puntos.</p>
+            </div>
+            <div class="footer__seguridad footer__boxes">
+                <i class="footer__iconos fa-solid fa-user-shield"></i>
+                <h3>Seguridad, de principio a fin</h3>
+                <p class="footer__textos">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+            </div>
+        </section>
+            
+        <div class="footer__copyright">
+            <h3 >Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
+        </div>
+    </footer> 
     
     
 

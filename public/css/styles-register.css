@@ -1,3 +1,4 @@
+
 .main__form {
     display: flex;
     justify-content: center;
@@ -27,21 +28,41 @@
 
 .form label input {
     margin-top: 5%;
-    padding: 4%;
+    padding: 2%;
 }
 
-.form label .input__cont-profile {
+.form .input__cont-profile {
     margin-top: 10%;
     display: flex;
-    gap: 5%;
+    margin-top: 5%;
     margin-left: 5%;
     font-size: 1rem;
     font-weight: 400;
+    gap: 20%;
+}
+
+.form .input__cont-profile .label__profile {
+    display: flex;
+    margin-right: 5%;
+    
 }
 
 .form label .input__profile {
     margin: 0% 5% 0 5%;
+}
 
+.input__cont-profile .label__profile .input__profile {
+    margin-left: 20%;
+}
+
+.user-profile-title, .title-interests {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.input__cont-profile .label__profile, .input__cont-interests .label__interests {
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 .input__data-fill {
@@ -50,17 +71,34 @@
     border-style: none;
 }
 
+.input__data-fill:focus {
+    outline: gray solid 1px;   
+}
 
 .input__cont-interests {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content: center;
     align-items: flex-start;
     margin-top: 10%;
     margin-left: 10%;
     font-size: 1rem;
     font-weight: 400;
+    width: 50%;
 
+}
+
+.label__interests {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.input__cont-interests .label__interests .input__interests {
+    margin: 0;
+    margin-right: 10%;
 }
 
 .form label .input__interests {
@@ -75,6 +113,7 @@
     display: flex;
     width: 90%;
     justify-content: space-around;
+    align-items: flex-start;
 }
 .btn__send, .btn__clear {
     border: none;
@@ -91,6 +130,42 @@
     text-decoration: none;
     
     color: white;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+
+@media (min-width: 1024px) {
+    .input__data-fill {
+        transition: all 0.7s;
+    }
+    
+    .input__data-fill:hover {
+        box-shadow: gray 1px 1px 30px;
+        outline: gray solid 1px;   
+    }
+    
+    .input__data-fill:focus {
+        outline: gray solid 1px;   
+    }
+
+    .btn__container {
+        justify-content: space-around;
+    }
+
+    .btn__send, .btn__clear {
+        padding: 2%;
+        width: 15%;
+        transition: all 0.7s;
+    }
+
+    
+    .btn__send:hover, .btn__clear:hover {
+        background-color: #03264cb0;
+    }
+    
 }
 
 
