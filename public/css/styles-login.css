@@ -61,6 +61,13 @@ body {
 
 
 @media (min-width: 1024px) {
+    
+    .header__logo {
+        height: 23vh;
+        width: 50%;
+    }
+    
+
     .login__btn-submit {
         transition: all 0.7s;
     }

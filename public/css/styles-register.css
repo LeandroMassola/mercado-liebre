@@ -138,6 +138,12 @@
 
 
 @media (min-width: 1024px) {
+    
+    .header__logo {
+        height: 23vh;
+        width: 30%;
+    }
+    
     .input__data-fill {
         transition: all 0.7s;
     }
